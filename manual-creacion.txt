@@ -1,0 +1,29 @@
+requisitos
+python
+git
+anaconda
++++
+crear el control de versiones
+git init
+crear el entorno virtual
+conda create --name fastapi-crud python=3
+pi
+python3 -m venv venv 
+activar entorno virtual
+conda activate fastapi-crud
+source /venv/bin/activate
+windows es: env/scrpts/activate.bat
+desactivar entorno virtual
+conda deactivate
+
+git init
+crea archivo .gitignore
+/venv/
+__pycache
+
+
+pip install fastapi uvicorn autopep8
+pip freeze > requirements
+
+
+uvicorn main:app --reload

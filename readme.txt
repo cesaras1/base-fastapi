@@ -1,0 +1,1 @@
+aplicacion crud de fastapi para consumir bd oracle y dar servicio deactivos.
