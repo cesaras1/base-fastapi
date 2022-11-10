@@ -2,28 +2,48 @@ requisitos
 python
 git
 anaconda
-+++
+**********
 crear el control de versiones
 git init
+***********
 crear el entorno virtual
+CON ANACONDA
 conda create --name fastapi-crud python=3
-pi
+
+CON PIP
 python3 -m venv venv 
+
+************
 activar entorno virtual
+
 conda activate fastapi-crud
-source /venv/bin/activate
+
+LINUX ES: source /venv/bin/activate
+
 windows es: env/scrpts/activate.bat
 desactivar entorno virtual
 conda deactivate
-
+****************
+activar git en la carpeta
 git init
+
+**********
+agregar las carpetas que no desea se guarden en el git, si usa sincronizacion por mega puede colocar esa misma excepcion para que mega no traslade los archivos ala nube y las computadoras con sistema operativo cuyo vinario noson compatibles.
 crea archivo .gitignore
 /venv/
-__pycache
+__pycache__
 
+*************
 
 pip install fastapi uvicorn autopep8
 pip freeze > requirements
 
+********
+para instalar lo requirmietos en un proyecto nuevo ejecute:
+pip install -r requirements.txt
+
+********
 
 uvicorn main:app --reload
+crea carpeta para vitas estatica
+pip install jinja2
